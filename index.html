@@ -14,7 +14,7 @@
     </nav>
     <div class = "header">
         <img src="bank.jpg" width="150" alt="Cool">
-        <div class="text">
+        <div id="text">
             <h1>ITF Simple Bank</h1>
             <p>Welcome to my first HTML - CSS - JS website</p>
         </div>
@@ -32,7 +32,7 @@
                 <img src="user.png" class="icon">
                 <div>
                     <b>Account Information</b><br>
-                    Name: Teepada Chuenprempree<br>
+                    Name: Phacharaphol Jaroen<br>
                     Type: Savings Account
                 </div>
             </div>
@@ -41,9 +41,9 @@
                 <img src="banknote.png" class="icon">
                 <div>
                     <b>Balance Information</b><br>
-                    Current account balance: <input type="text" value="1000"><br>
-                    Current cash balance: <input type="text" value="1000">
-                    <button>Change</button>
+                    Current account balance: <input id="accountBalance" type="text" value="1000"><br>
+                    Current cash balance: <input id="cashBalance" type="text" value="1000">
+                    <button onclick="updateBalance()">Change</button>
                 </div>
             </div>
 
@@ -51,12 +51,12 @@
                 <img src="cash_register.png" class="icon">
                 <div>
                     <b>Bank Operation</b><br>
-                    <select>
-                        <option>Deposit</option>
-                        <option>Withdraw</option>
+                    <select id="operationType">
+                        <option value="deposit">Deposit</option>
+                        <option value="withdraw">Withdraw</option>
                     </select>
-                    <input type="text" placeholder="Amount">
-                    <button>Proceed</button>
+                    <input id="amountInput" type="text" placeholder="Amount">
+                    <button onclick="processTransaction()">Proceed</button>
                 </div>
             </div>
         </div>
@@ -81,6 +81,6 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

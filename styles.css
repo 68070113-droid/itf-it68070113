@@ -15,8 +15,8 @@ body {
     display: flex;
 }
 
-.text {
-    margin-left: 5px;
+#text {
+    margin-left: 10px;
 }
 
 .na .id {
@@ -51,7 +51,7 @@ textarea {
 
 .column {
     flex: 1;                     /* ให้แต่ละคอลัมน์กว้างเท่ากัน */
-    background-color: #fff;
+    background-color: silver;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
