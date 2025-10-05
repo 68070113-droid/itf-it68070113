@@ -7,16 +7,80 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <p>68070113</p>
+    <nav class="na">
+        <p class="id">68070113</p>
         <h2>ITF Website</h2>
         <p>Week 14</p>
     </nav>
-    <div>
-        Enter number: <input type="number" id="myinput" value="0">
-        <button onclick="add()">+1</button>
+    <div class = "header">
+        <img src="bank.jpg" width="150" alt="Cool">
+        <div class="text">
+            <h1>ITF Simple Bank</h1>
+            <p>Welcome to my first HTML - CSS - JS website</p>
+        </div>
     </div>
-    <img src="Cool.png" width="96" alt="Cool">
+    <hr>
+    <textarea id="history" rows="8" cols="80" readonly></textarea>
+
+
+    <div class="main-section">
+    <!-- Left Column -->
+        <div class="column">
+            <h2>Account Overview</h2>
+
+            <div class="section">
+                <img src="user.png" class="icon">
+                <div>
+                    <b>Account Information</b><br>
+                    Name: Teepada Chuenprempree<br>
+                    Type: Savings Account
+                </div>
+            </div>
+
+            <div class="section">
+                <img src="banknote.png" class="icon">
+                <div>
+                    <b>Balance Information</b><br>
+                    Current account balance: <input type="text" value="1000"><br>
+                    Current cash balance: <input type="text" value="1000">
+                    <button>Change</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <img src="cash_register.png" class="icon">
+                <div>
+                    <b>Bank Operation</b><br>
+                    <select>
+                        <option>Deposit</option>
+                        <option>Withdraw</option>
+                    </select>
+                    <input type="text" placeholder="Amount">
+                    <button>Proceed</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Right Column -->
+        <div class="column">
+            <h2>Financial Tools</h2>
+
+            <div class="section">
+                <img src="coins.png" class="icon">
+                <div>
+                    <b>Currency Converter</b><br>
+                    Input balance: <input type="text" value="0"><br>
+                    Output balance: <input type="text" value="0"><br>
+                    Input currency:
+                <select>
+                    <option>USD</option>
+                    <option>THB</option>
+                </select>
+                <button>Convert</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
